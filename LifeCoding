@@ -218,7 +218,7 @@
     }
     console.log(Rapi(2, 2));
     
-  (Advanced) 7. 몰라도 되지만 익명함수의 정의는?  
+  (Advanced) 7. 몰라도 되지만 익명함수의 출력 방법은?  
     console.log((function (a, b) {
       return a * b;
     })(2, 2));
