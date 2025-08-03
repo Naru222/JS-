@@ -218,7 +218,7 @@
     }
     console.log(Rapi(2, 2));
     
-  (Advanced) 7. 몰라도 되지만 익명함수의 출력 방법은?  
+  (Advanced) 7. 몰라도 되지만 익명함수의 출력방법은?  
     console.log((function (a, b) {
       return a * b;
     })(2, 2));
@@ -227,4 +227,62 @@
 --------------------------------------------------------------------------------------------------------------
 
 
-11. 배열 
+11. 배열
+  1. 선언과 실행 방법은?
+    var name = ['Rapi', 'Anis', 'Neon'];
+    console.log(name[0]);
+
+    function Names() {
+      return ['Rapi', 'Anis', 'Neon'];
+    }
+    Nikke = Names();
+    console.log(Nikke[0]);
+
+11.3 배열의 반복문의 조우
+  2. 아래 코드의 값은?
+    function Names() {
+      return ['Rapi', 'Anis', 'Neon'];
+    }
+    Nikke = Names();
+    for (let i = 0; i < Nikke.length; i++) {
+      console.log(Nikke[i].toUpperCase());
+    }
+
+11.4 데이터의 추가
+  (Advanced) 3. 
+    var character = ['a', 'b', 'c', 'd']; 에서 
+    'i', 'a', 'z', 'c', 'd', 'e', 'f' 가 되게 코드 작성!
+      char.unshift('i'); // 맨 앞에 추가
+      char.splice(2, 1, 'z') // 중간에 추가 
+      char = char.concat('e', 'f'); // 맨 뒤에 추가
+      console.log(char);
+
+11.5 데이터 제거
+  4. 
+    var character = ['c', 'a', 'd', 'b']; 를 2 가지 순서대로 정렬
+      console.log(char.sort());
+      console.log(char.reverse());
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+12. 객체 : 문법
+  1. 선언하는 방법은?
+    var grades = { 'Rapi': 10, 'Anis': 9, 'Neon': 8 };
+    console.log(grades);
+
+    var Grades = {};
+    Grades['Rapi'] = 10;
+    Grades['Anis'] = 9;
+    Grades['Neon'] = 8;
+    console.log(Grades['Rapi']);
+
+    var GRADES = new Object();
+    GRADES['Rapi'] = 10;
+    GRADES['Anis'] = 9;
+    GRADES['Neon'] = 8;
+    console.log(GRADES['Rapi']);
+
+12.2 객체와 반복문
+  2. 
